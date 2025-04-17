@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Soap of You - Adventure Quiz</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cozy Soap Adventure Quiz</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="quiz-container">
-        <header>
-            <h1>🌿✨ The Soap of You Adventure Quiz</h1>
-            <p class="subtitle">A Parents' Day Story</p>
-        </header>
-        <div class="question-container">
-            <div id="question" class="question"></div>
-            <div class="answers">
-                <button class="answer-btn" onclick="nextQuestion('A')">Answer A</button>
-                <button class="answer-btn" onclick="nextQuestion('B')">Answer B</button>
-                <button class="answer-btn" onclick="nextQuestion('C')">Answer C</button>
-            </div>
-        </div>
-        <footer>
-            <p>Created with love for Parents' Day 🌸</p>
-        </footer>
+  <div class="container">
+    <h1>🧼 A Cozy Morning Surprise</h1>
+    <p class="story">
+      It’s a nice sunny morning. You wake up, yawn, roll over... and notice an envelope on your nightstand.
+    </p>
+
+    <div class="choices">
+      <button onclick="nextStep('A')">A. A Letter? I wonder what it is. You open it with excitement.</button>
+      <button onclick="nextStep('B')">B. Hmm… I wonder what this could be. You open it with caution.</button>
     </div>
 
-    <audio id="background-music" loop autoplay>
-        <source src="background-music.mp3" type="audio/mp3">
-    </audio>
+    <div id="next-part" class="story hidden">
+      <!-- More story content will appear here -->
+    </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

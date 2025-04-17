@@ -1,68 +1,72 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* --- Base Styling --- */
 body {
-    font-family: Arial, sans-serif;
-    background: url('background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #fef7f1, #fdf1e8);
+  color: #4a3c31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.quiz-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    text-align: center;
+/* --- Container Box --- */
+.container {
+  background-color: #ffffffcc;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(172, 129, 101, 0.2);
+  max-width: 600px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in-out;
 }
 
-header {
-    margin-bottom: 30px;
-}
-
+/* --- Title --- */
 h1 {
-    font-size: 3em;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #a06e52;
 }
 
-.subtitle {
-    font-size: 1.2em;
+/* --- Story Text --- */
+.story {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #4a3c31;
 }
 
-.question-container {
-    margin-bottom: 20px;
+/* --- Button Choices --- */
+.choices button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px 20px;
+  background-color: #e8d3c0;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4a3c31;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.question {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+.choices button:hover {
+  background-color: #d5b9a3;
 }
 
-.answer-btn {
-    background-color: #6fa3e7;
-    color: #fff;
-    padding: 15px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* --- Hidden class to toggle content --- */
+.hidden {
+  display: none;
 }
 
-.answer-btn:hover {
-    background-color: #4c81b0;
-}
-
-footer {
-    margin-top: 20px;
-    font-size: 1em;
-}
-
-footer p {
-    color: #ddd;
+/* --- Result Section Styling --- */
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #845b46;
 }
