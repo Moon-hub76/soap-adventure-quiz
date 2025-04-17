@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Soap of You - Adventure Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>🌿✨ The Soap of You Adventure Quiz</h1>
+            <p class="subtitle">A Parents' Day Story</p>
+        </header>
+        <div class="question-container">
+            <div id="question" class="question"></div>
+            <div class="answers">
+                <button class="answer-btn" onclick="nextQuestion('A')">Answer A</button>
+                <button class="answer-btn" onclick="nextQuestion('B')">Answer B</button>
+                <button class="answer-btn" onclick="nextQuestion('C')">Answer C</button>
+            </div>
+        </div>
+        <footer>
+            <p>Created with love for Parents' Day 🌸</p>
+        </footer>
+    </div>
+
+    <audio id="background-music" loop autoplay>
+        <source src="background-music.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
